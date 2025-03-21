@@ -8,10 +8,10 @@
     <style>
       body {
         background: url("Askim.png") center center no-repeat fixed;
-        background-size: contain;
+        background-size: cover;
         margin: 0;
         padding: 0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+        font-family: 'Open Sans', sans-serif;
         color: #333;
         display: flex;
         justify-content: center;
@@ -21,25 +21,25 @@
       }
 
       .container {
-        background: rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(5px);
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         padding: 40px;
         border-radius: 20px;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         max-width: 600px;
-        margin-top: 500px;
+        width: 90%;
+        margin: auto;
       }
 
       h1 {
         font-family: "Dancing Script", cursive;
-        font-size: 3em;
-        color: #000;
+        font-size: 2.5em;
+        color: #d6336c;
         margin-bottom: 20px;
       }
 
       p {
-        color: #000;
         font-size: 1.2em;
         margin-bottom: 15px;
       }
@@ -68,20 +68,26 @@
         font-style: italic;
       }
 
-      @media (max-width: 600px) {
+      /* 📱 Mobil cihazlar için özel stil */
+      @media (max-width: 768px) {
+        body {
+          background-size: contain;
+          background-position: top center;
+        }
+
         .container {
           padding: 20px;
+          width: 95%;
         }
 
         h1 {
-          font-size: 2.2em;
+          font-size: 2em;
         }
 
         .heart {
           font-size: 3em;
         }
       }
-      
     </style>
   </head>
   <body>
